@@ -1,0 +1,186 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,figcaption,figure,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:0.375rem/1 Lucida Grande,'Microsoft YaHei',"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif}
+h1{font-size:0.5625rem;font-weight:normal}
+h2{font-size:0.5rem;font-weight:normal}
+h3{font-size:0.4375rem;font-weight:normal}
+h4,h5,h6{font-size:100%;font-weight:normal}
+address,cite,dfn,em,var{font-style:normal}
+code,kbd,pre,samp,tt{font-family:"Courier New",Courier,monospace}
+small{font-size:0.375rem}
+ul,ol,li{list-style:none}
+a{text-decoration:none}
+abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help}
+q:before,q:after{content:''}
+legend{color:#000}
+fieldset,img{border:0}
+table{border-collapse:collapse;border-spacing:0}
+hr{border:0;height:1px}
+*{-ms-word-break:break-all;word-break:break-all;-ms-word-wrap:break-word;word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    background-color: #f7f7f7;
+}
+ul{
+	list-style: none;
+}
+#bd{
+	margin-bottom: 1.4rem;
+}
+
+.mod-search{
+	background-color:#eb6333;
+	padding:0.25rem 0.1875rem;
+}
+
+.mod-search .inner{
+	background: url(imgs/taobao1_03.jpg) no-repeat;
+	background-size:0.84375rem 0.65625rem;
+	height:0.65625rem;
+	background-position:1px center;
+	padding-left: 1.0315rem;
+}
+.mod-search .ipt{
+	height: 0.65625rem;
+	line-height: 0.65625rem;
+	background-color:#a63821;
+	text-align: center;
+	border-radius: 0.15625rem;
+	color:#fff;
+}
+.mod-search .icon-search-shop{
+	background: url(imgs/taobao1_06.jpg) no-repeat;
+	background-size:0.4375rem 0.40625rem;
+	height:0.4375rem;
+	background-position:1px center;
+	padding-left: 0.46875rem;
+}
+
+.mod-app{
+	padding-right:0.1875rem;
+	background-color:#eb6333;
+	display: flex;
+	justify-content:space-between; 
+}
+.mod-app .inner-wrap{
+	display: flex;
+	align-items:center;
+	background-color: #60646d;
+	padding:0.1875rem;
+}
+.mod-app .right{
+	width:1.7rem;
+	text-align: right;
+	color:#fff;
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+}
+
+.mod-app .icon-tb-logo{
+	margin:0 0.25rem;
+}
+
+.mod-slider img{
+	width: 100%;
+}
+.mod-menu{
+	background-color: #fff;
+}
+.mod-menu ul{
+	display: flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	text-align: center;
+	padding-bottom:0.3125rem;
+
+}
+
+
+
+.mod-menu ul li{
+	width:25%;
+	margin-top:0.3125rem;
+}
+
+.mod-menu ul li img{
+	width: 43%;
+}
+
+.mod-topnews{
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	display: flex;
+	align-items:center;
+	padding:0.15rem;
+	background-color: #fff;
+	
+}
+
+.mod-topnews .split{
+	border-right:1px solid #ccc;
+	width:1px;
+	margin:0 0.3125rem;
+	height:0.78125rem;
+}
+
+.mod-topnews .message{
+	margin-left:0.3125rem;
+}
+
+.mod-buy{
+	display: flex;
+	background-color: #fff;
+}
+
+.mod-buy .left img{
+	max-width:100%;
+}
+
+.mod-buy .right {
+	display: flex;
+	flex-direction:column;
+}
+
+.mod-buy .right .row2{
+	display: flex;
+}
+.mod-buy .right .row2 img{
+	max-width: 100%;
+}
+
+#ft{
+	background-color: #fff;
+	position: fixed;
+	width:100%;
+	bottom:0px;
+
+}
+
+#ft ul{
+	border-top: 1px solid #ccc;
+	display:flex;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	justify-content:space-around;
+	padding-top: 0.173rem;
+	align-items:center;
+}
+
+#ft ul li{
+	width:20%;
+	text-align: center;
+	margin-bottom: 0.173rem;
+}
+
+
+#ft ul li img{
+	height:0.5733rem;
+}
+.mod-menu ul h3,
+#ft ul h3{
+	font-size: 0.375rem;
+	color:#cacaca;
+}
+
