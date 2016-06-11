@@ -46,7 +46,7 @@ ul{
 
 .mod-search{
 	background-color:#eb6333;
-	padding:0.25rem 20px;
+	padding:0.25rem 0.1875rem;
 }
 
 .mod-search .inner{
@@ -73,6 +73,7 @@ ul{
 }
 
 .mod-app{
+	
 	background-color:#eb6333;
 	
 }
