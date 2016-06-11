@@ -15,7 +15,21 @@ legend{color:#000}
 fieldset,img{border:0}
 table{border-collapse:collapse;border-spacing:0}
 hr{border:0;height:1px}
-*{-ms-word-break:break-all;word-break:break-all;-ms-word-wrap:break-word;word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+*{-ms-word-break:break-all;word-break:break-all;-ms-word-wrap:break-word;word-wrap:break-word;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
     font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
@@ -25,7 +39,9 @@ ul{
 	list-style: none;
 }
 #bd{
-	margin-bottom: 1.4rem;
+	padding-bottom: 1.4rem;
+	position: relative;
+	top:-1px;
 }
 
 .mod-search{
@@ -57,14 +73,12 @@ ul{
 }
 
 .mod-app{
-	padding-right:0.1875rem;
+	
 	background-color:#eb6333;
-	display: flex;
-	justify-content:space-between; 
+	
 }
 .mod-app .inner-wrap{
-	display: flex;
-	align-items:center;
+	
 	background-color: #60646d;
 	padding:0.1875rem;
 }
@@ -72,10 +86,6 @@ ul{
 	width:1.7rem;
 	text-align: right;
 	color:#fff;
-	display: flex;
-    align-items: center;
-    justify-content: flex-end;
-   
 }
 
 .mod-app .icon-tb-logo{
@@ -89,10 +99,7 @@ ul{
 	background-color: #fff;
 }
 .mod-menu ul{
-	display: flex;
-	justify-content:space-around;
-	flex-wrap:wrap;
-	text-align: center;
+	
 	padding-bottom:0.3125rem;
 
 }
@@ -102,6 +109,7 @@ ul{
 .mod-menu ul li{
 	width:25%;
 	margin-top:0.3125rem;
+	text-align: center;
 }
 
 .mod-menu ul li img{
@@ -111,8 +119,7 @@ ul{
 .mod-topnews{
 	border-top:1px solid #ccc;
 	border-bottom:1px solid #ccc;
-	display: flex;
-	align-items:center;
+
 	padding:0.15rem;
 	background-color: #fff;
 	
@@ -130,7 +137,7 @@ ul{
 }
 
 .mod-buy{
-	display: flex;
+	
 	background-color: #fff;
 }
 
@@ -138,14 +145,6 @@ ul{
 	max-width:100%;
 }
 
-.mod-buy .right {
-	display: flex;
-	flex-direction:column;
-}
-
-.mod-buy .right .row2{
-	display: flex;
-}
 .mod-buy .right .row2 img{
 	max-width: 100%;
 }
@@ -160,12 +159,9 @@ ul{
 
 #ft ul{
 	border-top: 1px solid #ccc;
-	display:flex;
-	display: -webkit-box;
-	-webkit-box-orient: horizontal;
-	justify-content:space-around;
+
 	padding-top: 0.173rem;
-	align-items:center;
+	
 }
 
 #ft ul li{
