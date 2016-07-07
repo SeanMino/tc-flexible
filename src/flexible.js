@@ -22,7 +22,6 @@
 	        var isIPhone 		 = win.navigator.appVersion.match(/iphone/gi);
 	        var isLiebao 		 = win.navigator.appVersion.match(/LieBao/gi);
 	        var isSogou 		 = win.navigator.appVersion.match(/Sogou/gi);
-	        var clsName 		 = String(isIPhone||isLiebao||isSogou||isAndroid||'').toLowerCase();
 	        var devicePixelRatio = Math.floor(win.devicePixelRatio)||1;
 	        if (isIPhone) {
 	            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
@@ -39,7 +38,6 @@
 	            dpr = devicePixelRatio;   
 	        }
 
-	        doc.body.classList.add(clsName);
 	        scale = 1 / dpr;
 	    }
 
@@ -61,7 +59,7 @@
 	    docEl.setAttribute('data-dpr', dpr);
 
 		var setFontSize = function(){
-			var width = docEl.getBoundingClientRect().width;
+			var width =  docEl.getBoundingClientRect().width||innerWidth;
 	        if (width / dpr > 540) {
 	            width = 540 * dpr;
 	        }
@@ -89,6 +87,7 @@
 	    if (doc.readyState === 'complete') {
 	    	
 	        doc.body.style.fontSize = 12 * dpr + 'px';
+	        
 	    } else {
 	        doc.addEventListener('DOMContentLoaded', function(e) {
 	            doc.body.style.fontSize = 12 * dpr + 'px';
