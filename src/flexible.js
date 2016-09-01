@@ -20,8 +20,6 @@
 	    if (!dpr && !scale) {
 	        var isAndroid 		 = win.navigator.appVersion.match(/android/gi);
 	        var isIPhone 		 = win.navigator.appVersion.match(/iphone/gi);
-	        var isLiebao 		 = win.navigator.appVersion.match(/LieBao/gi);
-	        var isSogou 		 = win.navigator.appVersion.match(/Sogou/gi);
 	        var devicePixelRatio = Math.floor(win.devicePixelRatio)||1;
 	        if (isIPhone) {
 	            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
@@ -32,10 +30,9 @@
 	                dpr = 1;
 	            }
 
-	        }else if(isLiebao || isSogou){
-	        	dpr = 1;
 	        }else {
-	            dpr = devicePixelRatio;   
+
+	        	dpr = 1;
 	        }
 
 	        scale = 1 / dpr;
@@ -60,11 +57,11 @@
 
 		var setFontSize = function(){
 			var width =  docEl.getBoundingClientRect().width||innerWidth;
-	        if (width / dpr > 540) {
-	            width = 540 * dpr;
-	        }
+	       
 	        var rem = width / 10;
+	       
 	        rem = Math.max(rem,32);
+	        
 			docEl.style.fontSize =  rem+'px';
 			flexible.width = width;
 			flexible.rem = win.rem = rem;
